@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import cats from './cats.json';
+import Cat from './Cat.js';
 
 class Results extends Component {
   state = {
-    cats: [],
-    views: [],
-    score: []
   }
 
   render() {
-    const {cats} = this.state
 
     return(
       <div className="results">
         <Link to='/' className="close-results">Close Results</Link>
-        <ul>
-        </ul>
+        <ol className="results-list">
+          {cats.images.map((cat, index) =>
+          <Cat
+            key={index}
+            cat={cat}
+            />
+          )}
+        </ol>
       </div>
     )
   }
