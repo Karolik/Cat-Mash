@@ -7,17 +7,6 @@
   height: 40vmin;
 }
 
-.cat-vote-title {
-  background-color: #282c34;
-  /*min-height: 100vh;*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -31,7 +20,35 @@
   }
 }
 
+.cat-vote-title {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 main {
   display: flex;
   flex-direction: row;
+}
+
+.cat-photos {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.cat-image {
+  height: 40vmin;
+  width: 40vmin;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cat-image-thumbnail {
+  height: 15vmin;
+  width: 15vmin;
 }
